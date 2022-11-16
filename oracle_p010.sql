@@ -5,5 +5,5 @@ SELECT
        ROUND(1234.5678, 2) AS ROUND_2,
        ROUND(1234.5678, -1) AS ROUND_MN1,
        ROUND(1234.5678, -2) AS ROUND_MN2
-    
+    FROM DUAL;
        
