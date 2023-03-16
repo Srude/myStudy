@@ -1,0 +1,6 @@
+SELECT *
+FROM EMP
+WHERE SAL < ANY (SELECT SAL
+                 FROM EMP
+                 WHERE DEPTNO=30)
+ORDER BY SAL, EMPNO;
