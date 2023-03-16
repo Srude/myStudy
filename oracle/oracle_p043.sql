@@ -1,0 +1,5 @@
+SELECT *
+FROM EMP
+WHERE SAL IN (SELECT MAX(SAL)
+              FROM EMP
+              GROUP BY DEPTNO)
