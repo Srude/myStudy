@@ -1,0 +1,4 @@
+UPDATE DEPT_TEMP2
+    SET(DNAME, LOC) = (SELECT DNAME, LOC FROM DEPT
+                                        WHERE DEPTNO = 40)
+WHERE DEPTNO = 40
